@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginTop="8dp"
+                                   android:foreground="?android:attr/selectableItemBackground"
+                                   card_view:cardElevation="4dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+        <ImageView
+                android:id="@+id/ivCountryFlag"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                tools:src="@mipmap/ic_launcher"/>
+
+
+        <TextView
+                android:id="@+id/tvCountryName"
+                style="@style/AlertDialog.AppCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/ivCountryFlag"
+                android:text="Name"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/tvCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/ivCountryFlag"
+                android:text="Capital"/>
+
+        <TextView
+                android:id="@+id/tvPopulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ivCountryFlag"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/ivCountryFlag"
+                android:text="test"
+                android:textSize="10sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
